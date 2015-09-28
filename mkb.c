@@ -27,8 +27,8 @@ static struct binding bindings[] = {
 	B(XF86XK_AudioNext,	"mpc", "-q", "next"),
 	B(XF86XK_AudioPrev,	"mpc", "-q", "prev"),
 
-	B(XF86XK_MonBrightnessUp,   "xbacklight", "-inc", "+10"),
-	B(XF86XK_MonBrightnessDown, "xbacklight", "-dec", "+10"),
+	B(XF86XK_MonBrightnessUp,   "xbacklight", "-inc", "+5"),
+	B(XF86XK_MonBrightnessDown, "xbacklight", "-dec", "+5"),
 
 	B(NoSymbol, NULL) // end
 };
