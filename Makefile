@@ -1,9 +1,9 @@
 VERSION = $(shell git describe --always --dirty)
 PREFIX = $(HOME)
 
-CC = cc
+CC ?= cc
 
-CPPFLAGS = -D_DEFAULT_SOURCE -DVERSION=\"$(VERSION)\"
+CPPFLAGS ?= -D_DEFAULT_SOURCE -DVERSION=\"$(VERSION)\"
 
 CFLAGS ?= -g -Os
 CFLAGS += -std=c99 -pedantic
